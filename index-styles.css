@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: #007856;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width:1550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.soil-all-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    align-self: center;
+}
+
+#soil-test-submit{
+    height: 35px;
+    width: 200px;
+    margin: 10px;
+}
+#soil-form{
+    display: flex;
+    height: 700px;
+}
+
+.input-info{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #00865f;
+    border: 2px solid #00e5b0;
+    width: 325px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.border{
+    background-color: #00865f;
+    display: flex;
+    justify-content: center;
+    border: solid 2px #00e5b0;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 567px;
+    height: 100%;
+}
+
+#soil-test{
+    margin-right: 20px;
+    width: 225px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    background-color: #007856;
+    border-bottom: 1px solid #00e5b0;
+    padding: 10px;
+    height: 43px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+}
+
+.input-containers{
+    width: 90%;
+}
+
+
+button{
+    border:1px solid #f6911e;
+    background-color: #ac620e;
+    color: #fff;
+    border-radius: 5px;
+    width: 75px;
+    height: 25px;
+}
+
+.button:hover{
+    background-color: #f6911e;
+    cursor: pointer;
+}
+
+#plant-clear{
+    background-color: rgb(220, 83, 65);
+    border: 1px solid red;
+}
+
+#plant-clear:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#soil-test-submit{
+    margin: 14px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#reset-all{
+    margin-top: 4px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    background-color: rgb(220, 83, 65);
+    border: 1px solid red;
+}
+
+#reset-all:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#selected-plants{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+#selected-plants > div{
+    margin-top: 5px;
+    margin-left: 15px;
+    
+}
+
+#recommend{
+    display: flex;
+    background-color: #00865f;
+    height: 500px;
+    width: 700px;
+    color: #fff;
+    border:#00e5b0 2px solid;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+#recommend > div{
+    margin: 20px;
+}
+
+.results-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.results{
+    justify-content: center;
+    display: flex;
+    width: 700px;
+    margin-top: 20px;
+}
+
+.results-tabs{
+    width: 160px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: gray 0px 0px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.result-color{
+    width: 100%;
+    height: 8px;
+    margin-bottom: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.results-tabs > h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.results-tabs > h5{
+    margin-bottom: 10px;
+    margin-top:auto;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.results-tabs > p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    flex-direction: column;
+    background-color: rgb(214, 217, 220);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: auto;
+}
+
+#chart-container-1-l{
+    display: none;
+    flex-direction: column;
+    border: #00e5b0 2px solid;
+    border-radius: 5px;
+    width: 700px;
+    margin-bottom: 50px;
+    align-self: center;
+    padding-bottom: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#chart-container-1{
+    border: none;
+    width: 95%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.chart-containers{
+    align-self: center;
+    display: none;
+    width: 700px;
+    border:#00e5b0 2px solid;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+

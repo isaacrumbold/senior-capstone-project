@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/pictures/plant.png">
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="autocomplete.css">
+    <script>var exports = {};</script>
+    <script type="module" src="main.js"></script>
+    <title>Soil Test</title>
+</head>
+<body>
+    <header>
+        <h1>Home Soil Tester</h1>
+    </header>
+   
+        <div class="body-container"> 
+            <div class="soil-all-form">
+                <div id ="soil-form">
+                    <div class="input-info" id="soil-test" >
+                        <h3>Soil Test Results</h3>
+                        <form onsubmit="return false;">
+                            <div class="input-containers" >
+                                <label for="pH">pH</label>
+                            <input type="number" name="pH" id="pH"
+                            placeholder="Enter pH" 
+                            min="0" max="14">
+                            </div>
+                            <div class="input-containers" >
+                                <label for="phosphorus">Phosphorus (P)</label>
+                            <input type="number" name="phosphorus" id="phosphorus"
+                            placeholder="Enter P" >
+                            </div>
+                            <div class="input-containers" >
+                                <label for="potassium">Potassium (K)</label>
+                            <input type="decimal()" name="potassium" id="potassium"
+                            placeholder="Enter K">
+                            </div>
+                            <div class="input-containers">
+                                <label for="OM">Organic Matter (OM)</label>
+                            <input type="number" name="OM" id="OM"
+                            placeholder="Enter OM">
+                            </div>
+                            <div class="input-containers">
+                                <label for="CEC">Nutrient Retention Capacity (CEC)</label>
+                            <input type="number" name="CEC" id="CEC"
+                            placeholder="Enter CEC">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="input-info" id="plant-search-area">
+                        <h3>Plant Selection</h3>
+                        <form autocomplete="off" onsubmit="return false;" id="plant-search-form">
+                            <div class="autocomplete">
+                            <label for="plant">Search Plants</label>
+                            <input type="text" name="plant" id="plant-search"
+                            placeholder="Enter plant name">
+                            </div>
+                            <div>
+                                <button type="submit" class="button" id="plant-clear">Clear list</button>
+                                <button type="submit" class="button" id="plant-submit">Add</button>
+                            </div>
+                            
+                        </form>
+                        <div id="selected-plants">
+                        </div>
+                    </div>
+                
+                </div>
+                <form class="border" >
+                     <button type="button" class="button" id="soil-test-submit">Submit All</button>
+                     <button type="button" class="button" id="reset-all">Reset All</button>
+                </form>
+            </div>
+            <div id="chart-container-1-l">
+               <div class="chart-containers" id="chart-container-1">
+               </div> 
+
+                <div class="results-all">
+                <div class="results">
+                    <div id="ph-result" class="results-tabs">
+                        <div id="ph-color" class="result-color"></div>
+                        <h4>Soil PH</h4>
+                        <h4>(pH)</h4>
+                        <h5 id="ph-number"></h5>
+                        <p>Optimal Range<span>6.6-7.0</span></p>
+                    </div>
+                    <div id="p-result" class="results-tabs">
+                        <div id="p-color" class="result-color"></div>
+                        <h4>Phosphorus</h4>
+                        <h4>(P)</h4>
+                        <h5 id="p-number"></h5>
+                        <p>Optimal Range<span>36-55 ppm</span></p>
+                    </div>
+                    <div id="k-result" class="results-tabs">
+                        <div id="k-color" class="result-color"></div>
+                        <h4>Potassium</h4>
+                        <h4>(K)</h4>
+                        <h5 id="k-number"></h5>
+                        <p>Optimal Range<span>131-175 ppm</span></p>
+                    </div>
+                </div>
+                <div class="results">
+                    <div id="om-result" class="results-tabs">
+                        <div id="om-color" class="result-color"></div>
+                        <h4>Organic Matter</h4>
+                        <h4>(OM)</h4>
+                        <h5 id="om-number"></h5>
+                        <p>Optimal Range<span>3%-3.9%</span></p>
+                    </div>
+                    <div id="cec-result" class="results-tabs">
+                        <div id="cec-color" class="result-color"></div>
+                        <h4>Nutrient Retention<br>Capacity</h4>
+                        <h4>(CEC)</h4>
+                        <h5 id="cec-number"></h5>
+                        <p>Optimal Range<span>15-20</span></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            
+            <div class="chart-containers" id="chart-container-2">
+            </div>
+            <!-- <div id="recommend">
+                    <h3>Recommendations</h3>
+                <div id="recommend-container">
+                </div>
+            </div> -->
+
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
