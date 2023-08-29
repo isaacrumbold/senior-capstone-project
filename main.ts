@@ -186,10 +186,12 @@ function nutrientChart() {
       phLine.push(dataArr[0]);
     }
 
-
+    //setting chart.js defaults 
+    Chart.defaults.font.size = 16;
+    Chart.defaults.borderColor = 'black';
 
     // using chart.js to create a bar chart
-    const nutrientChart = new Chart(ctx, {
+    new Chart(ctx, {
       type: 'bar',
       data: {
         labels: ['pH', 'P', 'K', 'OM', 'CEC'],
@@ -273,8 +275,8 @@ function nutrientChart() {
         }
       }
     });
-
-    const plantChart = new Chart(ctx2, {
+    console.log(plantNames, phLevels, phLine)
+    new Chart(ctx2, {
       type: 'bar',
       data: {
         labels: plantNames,
@@ -293,7 +295,6 @@ function nutrientChart() {
           type: 'line',
           backgroundColor: 'orange',
           borderColor: 'orange',
-
           borderWidth: 3,
           order: 1
         }]
@@ -347,9 +348,7 @@ function nutrientChart() {
       }
     });
 
-    //setting chart.js defaults 
-    Chart.defaults.font.size = 16;
-    Chart.defaults.borderColor = 'black';
+
   }
 }
 
